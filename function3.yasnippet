@@ -4,6 +4,6 @@
 # contributor : Alexandr Lispython (alex@obout.ru)
 # expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
 # --
-func ${1:name}(${2:params}) ${3:return type} {
+func (${1:self name} *${2:struct name}) ${3:method name}(${4:params}) ${5:return type} {
     `yas/selected-text`$0
 }

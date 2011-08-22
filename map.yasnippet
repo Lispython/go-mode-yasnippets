@@ -1,9 +1,9 @@
 # -*- mode: snippet -*-
-# name: func name(param_name Struct) (types) { ... }
-# key: func
+# name: var name = map[type] type{ ... }
+# key: map
 # contributor : Alexandr Lispython (alex@obout.ru)
 # expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
 # --
-func ${1:name}(${2:params}) ${3:return type} {
-    `yas/selected-text`$0
+var ${1:name} = map[${2:string}] ${3:value type}{
+    $0
 }
