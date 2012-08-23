@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: func (self struct) name(params) (returns) { ... }
+# key: func
+# contributor : Constantin Kulikov (zxnotdead@gmail.com)
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+func (${1:self name} ${2:struct name}) ${3:method name}(${4:params}) (${5:returns}) {
+    `yas/selected-text`$0
+}
